@@ -1,21 +1,12 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  justify-content: center;
+  align-items: center;
+  display: block;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +15,55 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f3f3f3;
+  height: 100%;
+  gap: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.Container{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container-img{
+  width: 60vw;
+  height: 80vh;
+}
+
+.Container-login{
+  width: 35vw;
+  height: 80vh;
+}
+
+.App-footer{
+  background-color: #282c34;
+  color: white;
+  min-height: 5vh;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center;
+}
+
+.App-footer ul{
+  display: flex;
+  list-style-type: none; /* Quita los puntos de las listas */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+  justify-content: center;
+}
+
+.App-footer ul li {
+  margin-left: 15vh; /* Añade espacio entre los elementos */
 }
